@@ -1,18 +1,41 @@
 {
-  "name": "pruebanative",
+  "name": "newspace2",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "init": "git init && git config --global user.email 'usuario@gmail.com' && git config --global user.name 'probando' && git config --global user.password '1234'",
+    "remote": "git remote add origin https://github.com/marioacaballero/testnative.git",
+    "add": "git add .",
+    "commit": "git commit -m 'some changes'",
+    "pull": "git fetch",
+    "checkout": "git checkout main",
+    "merge": "git merge master -Xtheirs --allow-unrelated-histories -m 'Merge master into main'",
+    "push": "git push",
+    "start:docker": "npm run init && npm run remote && npm run add && npm run commit && npm run pull && npm run checkout && git merge master -Xtheirs --allow-unrelated-histories -m 'Merge master into main' && git push https://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@github.com/marioacaballero/testnative.git"
   },
   "dependencies": {
-    "expo": "~50.0.6",
+    "@expo/webpack-config": "~19.0.1",
+    "@react-navigation/bottom-tabs": "^6.5.11",
+    "@react-navigation/drawer": "^6.6.6",
+    "@react-navigation/material-top-tabs": "^6.6.5",
+    "@react-navigation/native": "^6.1.9",
+    "expo": "~50.0.2",
     "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
-    "react-native": "0.73.4"
+    "react-dom": "18.2.0",
+    "react-native": "0.73.2",
+    "react-native-gesture-handler": "~2.14.0",
+    "react-native-reanimated": "~3.6.2",
+    "react-native-safe-area-context": "4.8.2",
+    "react-native-screens": "~3.29.0",
+    "react-native-svg": "14.1.0",
+    "react-native-web": "~0.19.6",
+    "react-native-webview": "^13.6.4",
+    "expo-linear-gradient": "~12.7.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
