@@ -3,14 +3,20 @@ import { NavigationContainer } from '@react-navigation/native'
 
 import Default0 from './src/Default0'
 import Favoritos1 from './src/Favoritos1'
-import Tuperfil2 from './src/Tuperfil2'
-import Registrarse3 from './src/Registrarse3'
 import Pruebasencontradasde4 from './src/Pruebasencontradasde4'
 import Pruebasencontradasde5 from './src/Pruebasencontradasde5'
+import Registrarse3 from './src/Registrarse3'
+import Tuperfil2 from './src/Tuperfil2'
 
 const Tab = createDrawerNavigator()
 
 function MyTabs() {
+  console.log('asdf')
+  console.log('asdf')
+  console.log('asdf')
+  console.log('asdf')
+  console.log('asdf')
+  console.log('asdf')
   return (
     <Tab.Navigator>
       <Tab.Screen name="Default0" component={Default0} />

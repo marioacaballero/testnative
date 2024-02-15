@@ -7,15 +7,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "init": "git init && git config --global user.email 'test@gmail.com' && git config --global user.name 'docker' && git config --global user.username 'docker'",
-    "remote": "git remote add origin https://marioacaballero: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@github.com/marioacaballero/testnative.git",
-    "add": "git add .",
-    "commit": "git commit -m 'some changes'",
-    "pull": "git fetch",
-    "checkout": "git checkout main",
-    "merge": "git merge master -Xtheirs --allow-unrelated-histories -m 'Merge master into main'",
-    "push": "git push",
-    "start:docker": "npm run init && npm run remote && npm run add && npm run commit && npm run pull && npm run checkout && git merge master -Xtheirs --allow-unrelated-histories -m 'Merge master into main' && git push https://marioacaballero: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@github.com/marioacaballero/testnative.git"
+    "docker": "echo 'Done'"
   },
   "dependencies": {
     "@expo/webpack-config": "~19.0.1",
